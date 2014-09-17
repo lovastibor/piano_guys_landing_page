@@ -47,4 +47,4 @@ only screen and (                min-resolution: 2dppx) {
 
 
 /* DEMO ONLY */ 
-.parallax-bg2 { background-image: url(../../images/services-gray.jpg); }
+.parallax-bg2 { background-color: #232323;}
