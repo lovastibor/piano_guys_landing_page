@@ -191,7 +191,7 @@ nav {
 	top: 0;
 	width: 100%;
 	background: #fff;
-	border-bottom: 2px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
 	padding: 15px 0px;
 	z-index: 999;
 }
@@ -301,6 +301,7 @@ nav {
 .ticker h1 {
 	margin-bottom: 0px;
 	height: 90px;
+	font-style: 35px !important;
     -webkit-transition: margin-top 0.5s ease-in-out;
     -moz-transition:    margin-top 0.5s ease-in-out;
     -o-transition:      margin-top 0.5s ease-in-out;
@@ -1232,6 +1233,53 @@ only screen and (                min-resolution: 2dppx) {
 	.search-submit { 	background: #fff url(../images/blog/search@2x.png) no-repeat center center; background-size: 16px 16px;}
 
 }
+/* Links */
+a, a:visited { color: #656d78; font-weight: 400; text-decoration: none; }
+a:hover { color: #434a54; }
+
+.button { border: 1px solid #656d78; }
+.button:hover { border: 1px solid #434a54; }
+
+.desktop.navigation .nav-content a:hover, .desktop.navigation .nav-content a.active, .post-title a:hover, .cat-item a:hover, .widget-archive a:hover, .recentcomments a:hover, .widget-recent-entries a:hover, .comment-meta a:hover, .required  
+{ color: #656d78!important; }
+
+.gallery-next .bx-next:hover  { background: #656d78 url('../../images/blog/next.png') no-repeat; background-size: 22px 22px;}
+.gallery-prev .bx-prev:hover  { background: #656d78 url('../../images/blog/prev.png') no-repeat; background-size: 22px 22px;}
+
+.tagcloud a { border: 1px solid #656d78; } 
+.tagcloud a:hover { border: 1px solid #434a54; } 
+
+/* Content */
+.parallax.colored { background-color: #656d78; }
+.list-dot { background: #656d78; }
+
+.projectlist a:hover .projectinfo { 
+	background: #656d78; 
+	-webkit-transition: background .33s linear;
+	-moz-transition: background .15s linear;
+	-o-transition: background .15s linear;
+	transition: background .15s linear; 
+}
+
+
+/* Targets Retina Enabled Devices */
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (   -moz-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.gallery-next .bx-next:hover  { background: #656d78 url('../../images/blog/next@2x.png') no-repeat; background-size: 22px 22px;}
+.gallery-prev .bx-prev:hover  { background: #656d78 url('../../images/blog/prev@2x.png') no-repeat; background-size: 22px 22px;} 
+
+}
+
+
+.parallax-bg2 { background-color: #4F3632 !important;}
+
 .count-down
 {
 	width:100%; 
@@ -1240,39 +1288,38 @@ only screen and (                min-resolution: 2dppx) {
 }
 .line-color{
 	background: #403833;
-	margin-top: 55px;
+	margin-top: 10px;
 }
 .countdown
 {
-font-weight: bold;
-color: #000;
-margin-top: 130px;
+font-weight: 800;
+color: #4F3632;
 text-align: center;
 
 }
 .styled div
 {
-font-size: 60px; /* FONT SIZE of count-down timer */
+font-size: 80px; /* FONT SIZE of count-down timer */
 display: inline-block;
 margin-right: 25px;
-margin-top: 20px;
-color: #000;
+font-weight: 800;
+color: #4F3632;
 }
 
 .styled div span
 {
 display: block;
-font-size: 12px;
+font-size: 20px;
 font-weight: bold;
 text-transform: lowercase;
-margin-top: 20px;
 font-weight: 200;
+margin-bottom: 30px;
 }
 @media (max-width: 979px){
 .countdown
 {
 font-weight: bold;
-color: #000;
+color: #4F3632;
 margin-top: 130px;
 text-align: center;
 
@@ -1298,4 +1345,9 @@ text-align: center;
 *+html .styled div{
   display: inline;
   zoom: 1;
+}
+#section4 p{
+
+text-align: justify !important;
+	
 }

@@ -28,8 +28,8 @@ function initializeVisia() {
 	});
 
 	//RESPONSIVE HEADINGS
-	jQuery("h1").fitText(1.8, { minFontSize: '30px', maxFontSize: '52px' });
-	jQuery("h2").fitText(1.5, { minFontSize: '20px', maxFontSize: '36px' });
+	jQuery("h1").fitText(1.8, { minFontSize: '30px', maxFontSize: '40px' });
+	jQuery("h2").fitText(1.5, { minFontSize: '20px', maxFontSize: '30px' });
 
 
 	//HERO DIMENSTION AND CENTER
@@ -459,28 +459,28 @@ function initializePortfolio() {
 	pageRefresh = false;
 };
 /* END ------------------------------------------------------- */
-		jQuery(document).load(function(){
+
+jQuery(window).load(function(){
         var endDate = "September 28, 2014 15:03:25";
 
-        $('.countdown.simple').countdown({ date: endDate });
 
-        $('.countdown.styled').countdown({
+        jQuery('.countdown.styled').countdown({
           date: endDate,
           render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>nap</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>óra</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>perc</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>másodperc</span></div>");
+           jQuery(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>nap</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>óra</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>perc</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>másodperc</span></div>");
           }
         });
 
-        $('.countdown.callback').countdown({
+        jQuery('.countdown.callback').countdown({
           date: +(new Date) + 10000,
           render: function(data) {
-            $(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
+            jQuery(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
           },
           onEnd: function() {
-            $(this.el).addClass('ended');
+            jQuery(this.el).addClass('ended');
           }
         }).on("click", function() {
-          $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
+          jQuery(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
         });
  });
 
